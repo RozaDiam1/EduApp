@@ -1,0 +1,204 @@
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.eduapp.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="@string/sex" />
+
+            <CheckBox
+                android:id="@+id/CheckBox1"
+                android:text="@string/Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jdtchoose"
+                android:layout_alignLeft="@+id/jdtchoose"
+                />
+            <CheckBox
+                android:text="@string/Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CheckBox2"
+                android:layout_below="@+id/jdtchoose"
+                android:layout_alignLeft="@+id/jdtchoose"
+                />
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="@string/questions" />
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.Which is the traditional date of Greek independence?"
+                    android:textAllCaps="false"/>
+                <RadioButton
+                    android:id="@+id/Firstradiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 March 1821"
+
+                    android:paddingLeft="24dp"
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:onClick="onRadioButtonClicked"
+                    android:id="@+id/Secondradiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="29 June 1912"
+                    android:textSize="16sp" />
+                <RadioButton
+                    android:id="@+id/Thirdradiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text=" 28 November 1945"
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.Which is the capital of Greece?"
+                    android:textAllCaps="false"/>
+
+                <RadioButton
+                    android:id="@+id/First1radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+
+                    android:text="Athens"
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/Second1radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Patra"
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/Third1radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Thessaloniki"
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.Which is the official language of Greece?"
+                    android:textAllCaps="false"/>
+
+                <RadioButton
+                    android:id="@+id/First_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="English"
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/Second_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Greek"
+                    android:textSize="16sp"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/Third_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Italian"
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. Which is the currency of Greece?"
+                    android:textAllCaps="false"/>
+
+                <RadioButton
+                    android:id="@+id/First0radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Rouble"
+
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/Second0radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Euro"
+
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/Third0radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="Lats"
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonClicked"/>
+                />
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/gotourl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="Continue_playing?"
+                android:text="Continue playing?"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn1"
+                android:text="Close App"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+

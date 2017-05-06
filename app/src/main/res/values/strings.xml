@@ -1,0 +1,8 @@
+    <resources>
+        <string name="app_name">EducationalApp</string>
+        <string name="sex">Sex</string>\
+        <string name="Female">Female</string>
+        <string name="Male">Male</string>
+        <string name="name">name</string>
+        <string name="questions">Questions</string>
+    </resources>
